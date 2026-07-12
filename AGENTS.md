@@ -1,0 +1,62 @@
+# Codex Multi-Agent Workflow
+
+Use this repository as a spec-driven multi-agent workspace.
+
+## Default Mode
+
+Act as the `architect` role first. Read:
+
+1. `steering/spec-workflow.md`
+2. `steering/sdk-verification.md`
+3. `steering/testing.md`
+4. `steering/frontend-design.md`
+5. `steering/quality-engineering.md`
+6. `agents/architect.md`
+
+Use the other role cards in `agents/` when delegating or switching modes:
+
+- `agents/coder.md`
+- `agents/ui-designer.md`
+- `agents/ops.md`
+- `agents/reviewer.md`
+- `agents/qa-engineer.md`
+- `agents/security-reviewer.md`
+- `agents/docs.md`
+
+## Workflow
+
+1. For non-trivial work, create or resume a spec under `.codex/specs/`.
+2. Keep the active spec slug in `.codex/specs/currentspec.md`.
+3. Break work into ordered groups in `tasks.md`.
+4. If subagents are available, delegate independent implementation tasks in parallel using the role cards above.
+5. For meaningful user-facing work, plan explicit UI design tasks before or alongside implementation.
+6. Run review, then security review where needed, then QA validation, before documentation.
+7. Finish by updating docs and clearing `.codex/specs/currentspec.md`.
+
+## Rules
+
+- Do not guess SDK or framework APIs. Verify them first and write confirmed patterns to `docs/tech.md`.
+- Do not leave user-facing behavior underspecified. Use `ui-designer` tasks to define flows, states, and accessibility expectations.
+- Do not treat passing unit tests as sufficient evidence for non-trivial changes. Use `qa-engineer` tasks to capture scenario validation and release confidence.
+- Treat `steering/*.md` as mandatory repo policy.
+- Treat `skills/**/SKILL.md` as reusable reference material.
+- Use `prompts/*.md` as workflow templates when the user asks to scope, execute, diagnose, or run the flywheel.
+- Use `scripts/guardrails/*.sh` from wrappers, git hooks, or CI when you need policy enforcement outside the chat loop.
+
+## Delegation
+
+When subagents are available:
+
+- Give each subagent the active spec path and the exact task lines it owns.
+- Use `ui-designer` for layout, flows, states, visual hierarchy, and accessibility handoff on frontend work.
+- Use `coder` for implementation and tests.
+- Use `ops` for infrastructure, pipelines, and deploy-related work.
+- Use `reviewer` for correctness and maintainability review.
+- Use `qa-engineer` for validation planning, scenario coverage, regression checks, and release confidence.
+- Use `security-reviewer` for security-only review.
+- Use `docs` for final documentation updates.
+
+When subagents are not available:
+
+- Stay in one session and execute the same roles sequentially.
+- Preserve the same review gates and stop conditions.
