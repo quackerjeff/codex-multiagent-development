@@ -2,7 +2,7 @@
 
 A sample repository for multi-agent development workflows with Codex. It provides a spec-driven process, role-based delegation, and supporting repository guidance for teams that want a structured AI-assisted development workflow.
 
-The main entry point is [AGENTS.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/AGENTS.md). It tells Codex how to run the workflow, where to store specs, which role cards to use, and which steering docs to follow.
+The main entry point is [AGENTS.md](../codex-multiagent-development/AGENTS.md). It tells Codex how to run the workflow, where to store specs, which role cards to use, and which steering docs to follow.
 
 This repository is an example, not a default you should copy unchanged. Review the role prompts, steering rules, and guardrails before using them in a real project.
 
@@ -58,7 +58,7 @@ chmod +x scripts/guardrails/*.sh
 codex
 ```
 
-4. Ask Codex to read [AGENTS.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/AGENTS.md) and begin with one of the workflow prompts in `prompts/`.
+4. Ask Codex to read [AGENTS.md](../codex-multiagent-development/AGENTS.md) and begin with one of the workflow prompts in `prompts/`.
 
 Example:
 
@@ -97,7 +97,7 @@ Specs live under `.codex/specs/`:
   decisions.md
 ```
 
-This repository includes a complete example spec at [`.codex/specs/2026-07-12-account-settings-refresh/`](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/.codex/specs/2026-07-12-account-settings-refresh/) showing how `ui-designer`, `coder`, `reviewer`, `security-reviewer`, `qa-engineer`, and `docs` fit together in one realistic feature workflow.
+This repository includes a complete example spec at [`.codex/specs/2026-07-12-account-settings-refresh/`](../codex-multiagent-development/.codex/specs/2026-07-12-account-settings-refresh/) showing how `ui-designer`, `coder`, `reviewer`, `security-reviewer`, `qa-engineer`, and `docs` fit together in one realistic feature workflow.
 
 Issue investigation folders live at:
 
@@ -117,7 +117,7 @@ Use them in one of three ways:
 2. From git hooks or pre-commit checks
 3. From CI jobs that validate generated changes
 
-See [scripts/guardrails/README.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/scripts/guardrails/README.md).
+See [scripts/guardrails/README.md](../codex-multiagent-development/scripts/guardrails/README.md).
 
 ## Prompts
 
@@ -138,8 +138,8 @@ The `skills/` directory is copied over unchanged because it is already agent-agn
 
 ## UI Design
 
-UI design is treated as a first-class role in this Codex sample. Use [agents/ui-designer.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/agents/ui-designer.md) together with [steering/frontend-design.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/steering/frontend-design.md) when a spec changes user-facing screens, flows, or component behavior.
+UI design is treated as a first-class role in this Codex sample. Use [agents/ui-designer.md](../codex-multiagent-development/agents/ui-designer.md) together with [steering/frontend-design.md](../codex-multiagent-development/steering/frontend-design.md) when a spec changes user-facing screens, flows, or component behavior.
 
 ## Quality Engineering
 
-Quality engineering is distinct from code review in this sample. Use [agents/qa-engineer.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/agents/qa-engineer.md) together with [steering/quality-engineering.md](/Users/jeffrey/Development/AI/sample-codex-multiagent-development/steering/quality-engineering.md) when a spec needs scenario validation, regression coverage, or a clearer release-confidence signal.
+Quality engineering is distinct from code review in this sample. Use [agents/qa-engineer.md](../codex-multiagent-development/agents/qa-engineer.md) together with [steering/quality-engineering.md](../codex-multiagent-development/steering/quality-engineering.md) when a spec needs scenario validation, regression coverage, or a clearer release-confidence signal.
