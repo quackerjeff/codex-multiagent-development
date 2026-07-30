@@ -1,0 +1,7 @@
+agents/coder.md
+agents/security-reviewer.md
+agents/ui-designer.md
+steering/dependency-versions.md
+steering/frontend-design.md
+steering/sdk-verification.md
+steering/virtual-environments.md

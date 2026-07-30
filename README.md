@@ -43,6 +43,11 @@ This sample uses a few simple conventions:
 | Reusable workflows | Prompt templates in `prompts/` |
 | Policy enforcement helpers | Guardrail scripts in `scripts/guardrails/` |
 
+See [OPERATIONAL_FLOW.md](OPERATIONAL_FLOW.md) for the delivery sequence and [REPOSITORY_TOPOLOGY.md](REPOSITORY_TOPOLOGY.md) for monorepo vs multi-repo guidance.
+
+For multi-repo systems, use the starter templates in [templates/SATELLITE_AGENTS.md](templates/SATELLITE_AGENTS.md) and [templates/SYSTEM_CONTEXT.md](templates/SYSTEM_CONTEXT.md) when seeding service repositories.
+Use [BOOTSTRAPPING.md](BOOTSTRAPPING.md), [scripts/seed-repo.sh](scripts/seed-repo.sh), and [scripts/seed-repo.ps1](scripts/seed-repo.ps1) to create new service repositories from CMD profiles on macOS/Linux or Windows.
+
 ## Quick Start
 
 1. Put this directory at the root of the project you want Codex to work on, or copy its contents into an existing repository.
@@ -75,7 +80,11 @@ Read AGENTS.md, then use prompts/scope.md to open a new spec for ...
 ├── steering/                # Global behavioral rules referenced by AGENTS.md
 ├── skills/                  # Agent-agnostic domain knowledge files
 ├── scripts/guardrails/      # Standalone guardrail utilities for wrappers/CI/git hooks
+├── templates/               # Starter files and manifests for seeding satellite service repositories
+├── BOOTSTRAPPING.md
 ├── README.md
+├── OPERATIONAL_FLOW.md
+├── REPOSITORY_TOPOLOGY.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md

@@ -42,6 +42,8 @@ Use the other role cards in `agents/` when delegating or switching modes:
 - Treat `skills/**/SKILL.md` as reusable reference material.
 - Use `prompts/*.md` as workflow templates when the user asks to scope, execute, diagnose, or run the flywheel.
 - Use `scripts/guardrails/*.sh` from wrappers, git hooks, or CI when you need policy enforcement outside the chat loop.
+- When this framework is copied into a service repository, keep a local `AGENTS.md` in that repository and add a local `SYSTEM_CONTEXT.md` describing repo ownership, boundaries, dependencies, and contracts.
+- If a service repository also references a shared canonical CMD source, local repo instructions and the active spec take precedence over shared defaults.
 
 ## Delegation
 

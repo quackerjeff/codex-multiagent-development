@@ -1,0 +1,4 @@
+agents/coder.md
+agents/ui-designer.md
+steering/frontend-design.md
+steering/virtual-environments.md
