@@ -47,6 +47,10 @@ See [OPERATIONAL_FLOW.md](OPERATIONAL_FLOW.md) for the delivery sequence and [RE
 
 For multi-repo systems, use the starter templates in [templates/SATELLITE_AGENTS.md](templates/SATELLITE_AGENTS.md) and [templates/SYSTEM_CONTEXT.md](templates/SYSTEM_CONTEXT.md) when seeding service repositories.
 Use [BOOTSTRAPPING.md](BOOTSTRAPPING.md), [scripts/seed-repo.sh](scripts/seed-repo.sh), and [scripts/seed-repo.ps1](scripts/seed-repo.ps1) to create new service repositories from CMD profiles on macOS/Linux or Windows.
+For a concrete prompt flow after seeding a frontend repo, see [FIRST_UI_REPO_SESSION.md](FIRST_UI_REPO_SESSION.md).
+For a concrete prompt flow after seeding an API repo, see [FIRST_API_REPO_SESSION.md](FIRST_API_REPO_SESSION.md).
+For a concrete prompt flow after seeding a worker repo, see [FIRST_WORKER_REPO_SESSION.md](FIRST_WORKER_REPO_SESSION.md).
+For a concrete prompt flow after seeding a platform repo, see [FIRST_PLATFORM_REPO_SESSION.md](FIRST_PLATFORM_REPO_SESSION.md).
 
 ## Quick Start
 
@@ -82,6 +86,10 @@ Read AGENTS.md, then use prompts/scope.md to open a new spec for ...
 ├── scripts/guardrails/      # Standalone guardrail utilities for wrappers/CI/git hooks
 ├── templates/               # Starter files and manifests for seeding satellite service repositories
 ├── BOOTSTRAPPING.md
+├── FIRST_API_REPO_SESSION.md
+├── FIRST_PLATFORM_REPO_SESSION.md
+├── FIRST_UI_REPO_SESSION.md
+├── FIRST_WORKER_REPO_SESSION.md
 ├── README.md
 ├── OPERATIONAL_FLOW.md
 ├── REPOSITORY_TOPOLOGY.md

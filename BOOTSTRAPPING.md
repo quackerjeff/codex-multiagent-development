@@ -103,3 +103,8 @@ The script points `AGENTS.md` back to the canonical CMD source using `CMD_LOCATI
 2. Add repo-specific runtime, contract, and environment notes in `docs/tech.md`.
 3. Review the copied `agents/`, `steering/`, and `prompts/` files and remove anything that truly does not fit the repo.
 4. Start the first scoped spec under `.codex/specs/`.
+
+For a concrete walkthrough of the first session in a seeded `ui` repo, see [FIRST_UI_REPO_SESSION.md](FIRST_UI_REPO_SESSION.md).
+For a concrete walkthrough of the first session in a seeded `api` repo, see [FIRST_API_REPO_SESSION.md](FIRST_API_REPO_SESSION.md).
+For a concrete walkthrough of the first session in a seeded `worker` repo, see [FIRST_WORKER_REPO_SESSION.md](FIRST_WORKER_REPO_SESSION.md).
+For a concrete walkthrough of the first session in a seeded `platform` repo, see [FIRST_PLATFORM_REPO_SESSION.md](FIRST_PLATFORM_REPO_SESSION.md).
