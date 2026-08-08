@@ -51,6 +51,7 @@ For a concrete prompt flow after seeding a frontend repo, see [FIRST_UI_REPO_SES
 For a concrete prompt flow after seeding an API repo, see [FIRST_API_REPO_SESSION.md](FIRST_API_REPO_SESSION.md).
 For a concrete prompt flow after seeding a worker repo, see [FIRST_WORKER_REPO_SESSION.md](FIRST_WORKER_REPO_SESSION.md).
 For a concrete prompt flow after seeding a platform repo, see [FIRST_PLATFORM_REPO_SESSION.md](FIRST_PLATFORM_REPO_SESSION.md).
+For a step-gated GitHub pull request review workflow, see [HOW_TO_PR_REVIEW.md](HOW_TO_PR_REVIEW.md).
 
 ## Quick Start
 
@@ -90,6 +91,7 @@ Read AGENTS.md, then use prompts/scope.md to open a new spec for ...
 ├── FIRST_PLATFORM_REPO_SESSION.md
 ├── FIRST_UI_REPO_SESSION.md
 ├── FIRST_WORKER_REPO_SESSION.md
+├── HOW_TO_PR_REVIEW.md
 ├── README.md
 ├── OPERATIONAL_FLOW.md
 ├── REPOSITORY_TOPOLOGY.md
